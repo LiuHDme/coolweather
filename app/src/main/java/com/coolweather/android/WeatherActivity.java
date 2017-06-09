@@ -133,6 +133,7 @@ public class WeatherActivity extends AppCompatActivity {
      * @param weatherId
      */
     public void requestWeather(final String weatherId) {
+        this.mWeatherId = weatherId;
         String weatherUrl = "http://guolin.tech/api/weather?cityid="
                 + weatherId
                 + "&key=10069853379f468db2e0c86a4a6b6547";
